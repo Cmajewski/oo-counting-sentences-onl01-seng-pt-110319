@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    self.match(/.$/)? true : false
+    self.match(/\z./)? true : false
   end
 
   def question?
